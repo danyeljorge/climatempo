@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <script src="./asset/javascript/script.js" defer></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>App de Previsão do Tempo</title>
+  </head>
+  <body>
+    <main>
+      <div class="conternerprincipal">
+        <h1 class="titulo">Previsão de Tempo</h1>
+        <form id="pesquisar">
+          <i id="local" class="fa-solid fa-location-dot"></i>
+          <input
+            type="search"
+            class="localizacao"
+            id="localizacao"
+            placeholder="Digite o nome da cidade"
+          />
+
+          <button type="submit" class="enviar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <div id="clima">
+          <h2 class="TituloCidade"></h2>
+
+          <div id="informacao">
+            <div id="temp">
+              <img src="" id="tempImg" />
+
+              <div>
+                <h2 id="tempValor"></h2>
+                <p id="tempDescricao"></p>
+              </div>
+            </div>
+
+            <div id="OutraInformacao">
+              <div class="info">
+                <i
+                  id="tempMaxIcon"
+                  class="fa-solid fa-temperature-three-quarters"
+                ></i>
+                <div>
+                  <h2 class="tituloTemp">Temp. Max</h2>
+
+                  <p id="tempMax"></p>
+                </div>
+              </div>
+
+              <div class="info">
+                <i id="tempMinIcon" class="fa-solid fa-temperature-quarter"></i>
+                <div>
+                  <h2 class="tituloTemp">Temp. Min</h2>
+
+                  <p id="tempMin"></p>
+                </div>
+              </div>
+
+              <div class="info">
+                <i id="humidadeIcon" class="fa-solid fa-droplet"></i>
+                <div>
+                  <h2 class="tituloTemp">Humidade</h2>
+
+                  <p id="humidade"></p>
+                </div>
+              </div>
+
+              <div class="info">
+                <i id="ventoIcon" class="fa-solid fa-wind"></i>
+                <div>
+                  <h2 class="tituloTemp">Vento</h2>
+
+                  <p id="vento"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="alerta"></div>
+      </div>
+    </main>
+    <footer class="rodape">
+      <a href="https://danyeljorge.github.io/meu-portifolio/" target="_blank"
+        ><img src="./asset/img/logo.png" alt="logo dev daniel"
+      /></a>
+    </footer>
+  </body>
+</html>
