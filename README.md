@@ -60,7 +60,9 @@ const resultado = await fetch(apiurl);
 const dados = await resultado.json();
 console.log(dados);
 ```
+## Deploy
 
+https://danyeljorge.github.io/climatempo/
 
 ## Melhorias Futuras 🚀
 
